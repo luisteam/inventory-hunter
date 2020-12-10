@@ -104,3 +104,14 @@ I sure hope this doesn't happen... 2020 is bad enough already. My hope is that i
 ### Do I really need Docker?
 
 No, but I highly recommend it. If you know your way around python and pip/conda, then you should be able to replicate the environment I created using Docker.
+
+
+FORK LUIS:
+docker build -t luisteam/inventory-hunter:spanish .
+
+docker run -d --name cazastock --network host -v /root/BOTSTOCK/inventory-hunter/config/miinventario.yaml:/config.yaml luisteam/inventory-hunter:spanish --alerter telegram --webhook https://api.telegram.org/bot<TOKEN>/sendMessage --chat-id <id>
+
+docker logs -f cazastock
+
+editar src/scraper/common.py para configurar las palabras deseadas, linea 58
+

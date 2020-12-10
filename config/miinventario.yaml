@@ -1,0 +1,7 @@
+---
+refresh_interval: 2 # seconds
+max_price: 900 # dollars/euros/etc
+urls:
+  - https://www.pccomponentes.com/msi-geforce-rtx-3080-suprim-x-10gb-gddr6x
+  - https://www.pccomponentes.com/msi-geforce-rtx-3070-suprim-x-8gb-gddr6
+...
